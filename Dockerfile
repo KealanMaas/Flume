@@ -52,4 +52,4 @@ EXPOSE 5445
 # Set Work Directory And Start Flume-Agent
 WORKDIR /opt/flume 
 ENTRYPOINT ["bin/flume-ng", "agent"]
-CMD ["-n", "hdfs-agent", "-c", "/opt/flume/conf", "-f", "conf/hdfs-agent.conf"]
+CMD ["-n", "hdfs-agent", "-c", "/opt/flume/conf", "-f", "conf/hdfs-agent.conf","-Dflume.root.logger=INFO,LOGFILE,console"]
