@@ -47,7 +47,7 @@ COPY config/flume-env.sh ${FLUME_PREFIX}/conf/flume-env.sh
 COPY config/hdfs-agent.conf ${FLUME_PREFIX}/conf/hdfs-agent.conf
 
 # Expose Port For JMX Remote Connection
-EXPOSE 7199
+EXPOSE 5445
 
 # Set Work Directory And Start Flume-Agent
 WORKDIR /opt/flume 
